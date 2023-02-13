@@ -1,0 +1,159 @@
+/* Poppins Font*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2b2f;
+}
+.container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-left: 5px solid #f87171;
+  border-right: 5px solid #4ade80;
+  padding-inline: 5px;
+}
+
+.cards-wrapper {
+  display: flex;
+}
+
+/* Card Styling */
+.card {
+  position: relative;
+  background:  #efefef;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-inline: 15px;
+  padding-block: 50px;
+  min-width: 320px;
+}
+
+.card h2 {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #000000;
+}
+.card p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.card a {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.one a {
+  background: #2196f3;
+}
+
+.two a {
+  background: #e91e63;
+}
+
+.three a {
+  background: #23c186;
+}
+
+.four a {
+  background-color: orangered;
+}
+.five a {
+  background-color: purple;
+}
+
+/* Swiper Navigation Styles */
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 55px;
+}
+.swiper-button-prev {
+  color: #f87171;
+}
+
+.swiper-button-prev:hover {
+  color: #dc2626;
+}
+.swiper-button-next {
+  color: #4ade80;
+}
+.swiper-button-next:hover {
+  color: #16a34a;
+}
+
+/* Remove navigation button on smaller screens*/
+@media screen and (max-width: 800px) {
+  .content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+/* Swiper Pagination Styles */
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+/* github link */
+.git-link {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.circular--square {
+ border-radius: 50%;
+ 
+ padding: 1px;
+ box-shadow:
+      inset 0 -3em 3em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.nombre{
+font-weight: bold;
+}
